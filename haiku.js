@@ -98,18 +98,18 @@ var runPoem = function() {
 
 
 
-	var talker = window.speechSynthesis
+	//var talker = window.speechSynthesis
 
 	console.log("aaah")
 	var lines = markov.generateSentences(3);
 	var tester = poemJoined(lines);
 	var aaah = makePoem(tester);
 
-	var ok = new SpeechSynthesisUtterance(aaah);
-	ok.voice = "Albert"
-	ok.pitch = -2;
-	ok.rate = .7;
-	talker.speak(ok);
+	//var ok = new SpeechSynthesisUtterance(aaah);
+	//ok.voice = "Albert"
+	//ok.pitch = -2;
+	//ok.rate = .7;
+	//talker.speak(ok);
     var poem = document.querySelector("#poem");
     
     var saaad = splitPoem(lines.join(" "));
