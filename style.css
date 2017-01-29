@@ -16,7 +16,9 @@
 	padding: 20px;
 }
 
-img {
+video {
+	position: fixed;
+	z-index: -1;
 }
 
 

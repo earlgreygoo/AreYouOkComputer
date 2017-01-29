@@ -8,9 +8,9 @@ markov = new RiMarkov(10);
 
 markov.loadText(badString);
 markov.loadText(radString);
-markov.loadText(sisy);
+//markov.loadText(sisy);
 markov.loadText(sadString);
-markov.loadText(cummings);
+//markov.loadText(cummings);
 markov.loadText(breakUp);
 
 
@@ -20,7 +20,7 @@ markov.loadText(breakUp);
 
 
 var randomNum = function(){
-	return Math.floor((Math.random() * 15) + 1);
+	return Math.floor((Math.random() * 30) + 1);
 }
 
 
@@ -146,7 +146,7 @@ function requestFullScreen(element) {
 window.onload = function() {
 
 	document.addEventListener("click",function(){requestFullScreen(document.body)});
-	setInterval(runPoem,30000);
+	setInterval(runPoem,3000);
 }
 
 
