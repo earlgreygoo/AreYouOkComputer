@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'Comp'; /*a name to be used later*/
+    src: url("./comp.ttf"); /*URL to font*/
+}
+
+
+* {
+	text-align: center;
+}
+
+
+.container {
+	margin: auto;
+	text-align: center;
+	width: 100%;
+	padding: 20px;
+}
+
+img {
+}
+
+
+canvas {
+  width: 100px;
+  height: 100px;
+}
+
+body {
+	background: black;
+
+}
+
+p{
+	width: 90%;
+	display: inline-block;
+}
+
+span{
+	font-size: 30px;
+	font-family: comp;
+	background-color: white;
+	color: black;
+	padding: 2px;
+  display: inline-block;
+}
+
+
+
+
+
