@@ -6,13 +6,12 @@
 markov = new RiMarkov(10);
 
 
-//markov.loadText(badString);
-//markov.loadText(radString);
-//markov.loadText(sisy);
-//markov.loadText(sadString);
-//markov.loadText(cummings);
-//markov.loadText(breakUp);
-markov.loadText("fuck fuck aaaaaah dear god")
+markov.loadText(badString);
+markov.loadText(radString);
+markov.loadText(sisy);
+markov.loadText(sadString);
+markov.loadText(cummings);
+markov.loadText(breakUp);
 
 
 
@@ -147,6 +146,8 @@ window.onload = function() {
 
 	document.addEventListener("click",function(){requestFullScreen(document.body)});
 	setInterval(runPoem,20000);
+
+	setTimeOut("location.reload(true);",300000);
 }
 
 
