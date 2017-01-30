@@ -138,6 +138,10 @@ function requestFullScreen(element) {
 }
 
 
+function timedRefresh(timeoutPeriod) {
+	setTimeout("location.reload(true);",timeoutPeriod);
+}
+
 
 
 
@@ -147,7 +151,7 @@ window.onload = function() {
 	document.addEventListener("click",function(){requestFullScreen(document.body)});
 	setInterval(runPoem,20000);
 
-	setTimeOut("location.reload(true);",300000);
+	timedRefresh(300000);
 }
 
 
