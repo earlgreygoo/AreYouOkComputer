@@ -146,7 +146,7 @@ function requestFullScreen(element) {
 window.onload = function() {
 
 	document.addEventListener("click",function(){requestFullScreen(document.body)});
-	setInterval(runPoem,3000);
+	setInterval(runPoem,20000);
 }
 
 
