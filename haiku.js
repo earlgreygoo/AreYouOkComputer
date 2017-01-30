@@ -12,7 +12,7 @@ markov = new RiMarkov(10);
 //markov.loadText(sadString);
 //markov.loadText(cummings);
 //markov.loadText(breakUp);
-markov.loadText("flcon fcker does art taylor sppank makes the stuff noah wight builds things ryan meeker cries everytime")
+markov.loadText(credits)
 
 
 

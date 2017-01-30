@@ -18,3 +18,4 @@ var sisy = "The gods had condemned Cheryl to ceaselessly rolling a rock to the t
 
 
 
+var credits = "flcon fcker does art taylor sppank makes the stuff noah wight builds things ryan meeker cries everytime"
