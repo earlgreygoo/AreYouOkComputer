@@ -3,16 +3,16 @@
 
 
 
-markov = new RiMarkov(10);
+markov = new RiMarkov(3);
 
 
-//markov.loadText(badString);
-//markov.loadText(radString);
+markov.loadText(badString);
+markov.loadText(radString);
 //markov.loadText(sisy);
-//markov.loadText(sadString);
+markov.loadText(sadString);
 //markov.loadText(cummings);
-//markov.loadText(breakUp);
-markov.loadText(credits)
+markov.loadText(breakUp);
+markov.loadText(artBois)
 
 
 
@@ -49,12 +49,9 @@ makePoem = function(inputString) {
 	var lexicon = new RiLexicon()
 	var output = ""
 	for(var i = 0; i < splitString.length; i++) {
-		if(i % 4 === 0){
-			output += lexicon.randomWord(parsedString[i]) + " ";
-		}
-		else {
+		
 			output += splitString[i] + " ";
-		}
+		
 		
 	}
 
@@ -147,9 +144,10 @@ function timedRefresh(timeoutPeriod) {
 
 
 window.onload = function() {
+	runPoem()
 
 	document.addEventListener("click",function(){requestFullScreen(document.body)});
-	setInterval(runPoem,20000);
+	setInterval(runPoem,30000);
 
 	timedRefresh(300000);
 }

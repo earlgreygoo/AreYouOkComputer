@@ -18,4 +18,4 @@ var sisy = "The gods had condemned Cheryl to ceaselessly rolling a rock to the t
 
 
 
-var credits = "Flcon Fcker does art. Taylor sppank makes the stuff. Noah wight builds things. Ryan meeker cries everytime"
+var artBois = "Flcon Fcker does art. Taylo Spank is a cool dude who knows a lot of things about stuff. Noah Wight built a thing and hasn't slept in a few weeks. Ryan Meeker also hasn't slept in a  while and feels floaty. Also smells like garbage. Please give us money"
