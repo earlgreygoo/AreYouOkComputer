@@ -192,7 +192,7 @@ window.onload = function() {
 	runPoem()
 
 	document.addEventListener("click",function(){requestFullScreen(document.body)});
-	setInterval(runPoem,10000);
+	setInterval(runPoem,15000);
 
 	timedRefresh(30000);
 }
