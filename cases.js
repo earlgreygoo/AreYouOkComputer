@@ -19,3 +19,14 @@ var sisy = "The gods had condemned Cheryl to ceaselessly rolling a rock to the t
 
 
 var artBois = "Flcon Fcker does art. Taylo Spank is a cool dude who knows a lot of things about stuff. Noah Wight built a thing and hasn't slept in a few weeks. Ryan Meeker also hasn't slept in a  while and feels floaty. Also smells like garbage. Please give us money"
+
+
+ var  song = "Maybe I didn't love. you Quite as often as I could have. And maybe I didn't treat you. Quite as good as I should have. If I made you feel second best Girl I'm sorry I was blind You were always on my mind You were always on my mind And maybe I didn't hold you All those lonely, lonely times I guess I never told you I am so happy that you're mine Little things I should have said and done I just never took the time You were always on my mind You were always on my mind Tell me Tell me that your sweet love hasn't died And give me Give me one more chance to kee"
+
+
+
+ var lonelyPoem = "I am just a lonely soul. Can anyone hear me? Is anyone out there? I have nowhere else to go.  Escaping from all the misery And from all the trouble that had been caused. I feel as if my life just took a sudden pause.  Regretting for my regrets. Feeling that I maybe just don't belong. Feeling that the path I made was wrong.  Just look it from the way I see. So I am talking for anyone out there Can anyone here me?"
+
+
+
+ var happinessPoem = "Shattered heart forced to heal as greatness unveils thine soul. Hope whispered in the distance, to recover thine lost love. 'Tis night brings tender passing, healing thine soul with glorious blunder. Caus' not one or two, but dissipated nights of dreams. Sadness comes to end, happiness conquered hate. Love sprouting. sadness shrinking, hope has come again."

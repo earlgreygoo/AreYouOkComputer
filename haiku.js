@@ -1,18 +1,47 @@
 
 
+function getRandomArbitrary(min, max) {
+    return Math.floor(Math.random() * (max - min) + min);
+}
+
+var markovNum = getRandomArbitrary(1,10)
+
+markov = new RiMarkov(markovNum);
+console.log(markovNum)
+
+
+var mood = getRandomArbitrary(0,10)
 
 
 
-markov = new RiMarkov(3);
+
+var textLoader = function(inputNumber){
+	if(inputNumber < 4){
+		markov.loadText(badString);
+		markov.loadText(radString);
+		markov.loadText(sadString);
+		
+
+	}
+	else if(inputNumber > 4 && inputNumber <7){
+		markov.loadText(breakUp);
+		markov.loadText(song)
+		markov.loadText(lonelyPoem)
+		
+	}
+
+	else {
+		markov.loadText(happinessPoem)
+		
+	}
+}
 
 
-markov.loadText(badString);
-markov.loadText(radString);
-//markov.loadText(sisy);
-markov.loadText(sadString);
-//markov.loadText(cummings);
-markov.loadText(breakUp);
-markov.loadText(artBois)
+
+
+
+
+textLoader(mood);
 
 
 
@@ -24,6 +53,19 @@ var randomNum = function(){
 
 
 
+var displayStats = function(inputNumber){
+	if(inputNumber < 4){
+		stats.innerHTML = "mood: awful"
+	}
+	else if(inputNumber > 4 && inputNumber <7){	
+		stats.innerHTML = "mood: could be better"
+	}
+	else {
+		stats.innerHTML = "mood: ...fine"
+	}
+
+
+}
 
 
 
@@ -34,9 +76,6 @@ var poemJoined = function(inputArr){
 	}
 	return output
 }
-
-
-
 
 
 
@@ -87,14 +126,15 @@ makePoem = function(inputString) {
 
 
 
+var randomizeModel
+
 
 
 var runPoem = function() {
 
-
-
-
 	//var talker = window.speechSynthesis
+
+
 
 	console.log("aaah")
 	var lines = markov.generateSentences(3);
@@ -113,11 +153,10 @@ var runPoem = function() {
     var testing = splitPoem(aaah);
 
     poem.innerHTML = testing;
-   
-   
-
+  
 //
 }
+
 
 
 function requestFullScreen(element) {
@@ -144,12 +183,18 @@ function timedRefresh(timeoutPeriod) {
 
 
 window.onload = function() {
+	var stats = document.querySelector("#stats")
+
+	if(screen.width <200){
+		alert("that's a tiny browser")
+	}
+	displayStats(mood)
 	runPoem()
 
 	document.addEventListener("click",function(){requestFullScreen(document.body)});
-	setInterval(runPoem,30000);
+	setInterval(runPoem,4000);
 
-	timedRefresh(300000);
+	timedRefresh(30000);
 }
 
 

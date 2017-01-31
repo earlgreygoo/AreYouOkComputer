@@ -32,6 +32,13 @@ body {
 
 }
 
+h1 {
+	text-align: left;
+	color: white;
+	font-size: 40px;
+	font-family: comp;
+}
+
 p{
 	width: 90%;
 	display: inline-block;
