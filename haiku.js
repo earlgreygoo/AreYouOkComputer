@@ -4,7 +4,7 @@ function getRandomArbitrary(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
 }
 
-var markovNum = getRandomArbitrary(1,10)
+var markovNum = getRandomArbitrary(3,10)
 
 markov = new RiMarkov(markovNum);
 console.log(markovNum)
@@ -192,7 +192,7 @@ window.onload = function() {
 	runPoem()
 
 	document.addEventListener("click",function(){requestFullScreen(document.body)});
-	setInterval(runPoem,4000);
+	setInterval(runPoem,10000);
 
 	timedRefresh(30000);
 }
