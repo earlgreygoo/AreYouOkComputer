@@ -32,6 +32,7 @@ var textLoader = function(inputNumber){
 
 	else {
 		markov.loadText(happinessPoem)
+		markov.loadText(nicePoem)
 		
 	}
 }

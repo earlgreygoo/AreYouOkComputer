@@ -29,6 +29,9 @@ canvas {
 
 body {
 	background: black;
+	animation-name: strobe;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 
 }
 
@@ -51,6 +54,25 @@ span{
 	color: black;
 	padding: 2px;
   display: inline-block;
+}
+
+
+@keyframes strobe {
+	0% {
+		background: white;
+	}
+	10% {
+		background: black;
+	}
+	20% {
+		background: black;
+	}
+	21% {
+		background: red;
+	}
+	22% {
+		background: black;
+	}
 }
 
 
